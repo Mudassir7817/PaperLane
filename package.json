@@ -1,0 +1,33 @@
+{
+  "name": "paperlane",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview --host 127.0.0.1",
+    "test": "tsx tests/pdf-workflow.ts",
+    "test:browser": "tsx tests/browser-workflow.ts",
+    "format": "prettier --write src tests README.md"
+  },
+  "dependencies": {
+    "@pdf-lib/standard-fonts": "^1.0.0",
+    "lucide-react": "^0.468.0",
+    "pdf-lib": "^1.17.1",
+    "pdfjs-dist": "^4.10.38",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.63.0",
+    "@types/node": "^22.10.0",
+    "@types/react": "^18.3.18",
+    "@types/react-dom": "^18.3.5",
+    "@vitejs/plugin-react": "^4.3.4",
+    "prettier": "^3.9.9",
+    "tsx": "^4.19.2",
+    "typescript": "~5.7.3",
+    "vite": "^6.0.5"
+  }
+}
